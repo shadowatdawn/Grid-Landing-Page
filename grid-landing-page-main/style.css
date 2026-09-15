@@ -2,6 +2,7 @@ body{
     display: flex;
     height: 100vh;
     width: 100%;
+    position: relative;
     flex-direction: column;
     border: 1px solid hsl(228, 99%, 58%);
     font-family: 'Inter', sans-serif;
@@ -11,7 +12,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    text-align: left;
+    align-items: center;
     box-sizing: border-box;
     padding: 20px;
     background-color: hsl(228, 100%, 60%);
@@ -21,18 +22,29 @@ header{
     height: 10%;
     width: 100%;
 }
-nav{
+header div{
     display: flex;
+    flex-direction: row;
+}
+nav{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
     flex-direction: column;
     padding: 20px;
     align-items: end;
-    border:1px solid black;
-    margin-right: 0;
-    flex-wrap: wrap;
-    overflow: visible;
     width: 250px;
     height: 100%;
     background-color: hsl(228, 100%, 60%);
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
 }
 .navitems{
     color: white;
