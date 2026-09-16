@@ -12,11 +12,12 @@
 <body>
   <header>
     <div>
-    <span class="dot"></span><h6>Bridge Collective</h6>
+    <span class="dot"></span>
+    <h6>Bridge Collective</h6>
     </div>
   <nav>
-  <a href="#"> 
-  <img onclick = closenav(); src= "assets/images/icon-close.svg" alt="close" height="20px" width="20px">
+  <a href="#" class="close">
+    <img onclick = closenav(); src= "assets/images/icon-close.svg" alt="close" height="20px" width="20px">
    </a>
   <a href="#" class="navitems">About</a></li>
   <a href="#" class="navitems">Schools</a></li>
@@ -24,19 +25,27 @@
   <a href="#" class="navitems">Impact</a></li>
   <a href="#" class="navitems">Contact</a></li>
   </nav>
-  <a href="#"> 
+  <a href="#" class="menubtn"> 
     <img onclick = shownav(); src= "assets/images/icon-menu.svg" alt="menu bar" height="20px" width="20px"> 
   </a>
   <script>
     function shownav(){
     const nav = document.querySelector('nav')
+    const midpart = document.querySelector('midpart')
+    const footer = document.querySelector('footer')
     nav.style.display = 'flex';
+    midpart.style.backgroundColor = 'hsl(228, 99%, 58%)';
+    footer.style.backgroundColor = 'hsl(228, 99%, 58%)';
     }
   </script>
   <script>
     function closenav(){
+    const midpart = document.querySelector('midpart')
+    const footer = document.querySelector('footer')
     const nav = document.querySelector('nav')
     nav.style.display = 'none';
+    midpart.style.backgroundColor = 'hsl(228, 100%, 60%)';
+    footer.style.backgroundColor = 'hsl(228, 100%, 60%)';
     }
   </script>
   </header>
