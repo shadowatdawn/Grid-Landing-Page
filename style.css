@@ -114,6 +114,7 @@ nav div{
 .statistics{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     width: 60%;
     height: 100%;
     animation-name: SlideIn;
