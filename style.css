@@ -54,9 +54,13 @@ nav{
   background-color: white;
   border-radius: 50%;
 }
+nav div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
 .navitems{
     color: white;
-    padding: 2px;
     text-decoration: none; 
 }
 .navitems:hover{
