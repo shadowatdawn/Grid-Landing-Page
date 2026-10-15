@@ -1,17 +1,14 @@
 body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
     box-sizing: border-box;
-    height: 100vh;
-    width: 100vh;
-    position: relative;
     border: 1px solid hsl(228, 99%, 58%);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 17px;
+    height: 100vh;
 }
 header{
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +17,6 @@ header{
     color: hsl(0, 0%, 100%);
     border: 1px solid hsl(220, 100%, 64%);
     font-weight: 300;
-    height: 10%;
-    width: 100%;
 }
 header div{
     display: flex;
@@ -38,12 +33,9 @@ nav{
     flex-direction: column;
     box-sizing: border-box;
     position: absolute;
-    top: -1px;
-    right: 0;
+    top: 8px;
+    right: 8px;
     padding: 10px;
-    z-index: 10;
-    width: 250px;
-    height: 100vh;
     box-shadow: 100;
     background-color: hsl(228, 100%, 60%);
 }
@@ -71,89 +63,45 @@ nav{
     color: white;
     text-decoration: underline; 
 }
-<<<<<<< Updated upstream:grid-landing-page-main/style.css
-midpart{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    background-color: hsl(228, 100%, 60%);
-=======
 .midpart{
-    position: relative;
     box-sizing: border-box;
-    height: 80%;
-    width: 100vh;
     display: grid;
     grid-template-columns: 40% 30% 30%;
-    grid-template-rows: 100%;
->>>>>>> Stashed changes:style.css
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "introduction stat1 stat2"
+    "introduction stat3 stat4";
 }
 .introduction{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< Updated upstream:grid-landing-page-main/style.css
-    color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: hsl(228, 100%, 60%);
     border: 1px solid hsl(220, 100%, 64%);
-    font-weight: 300;
-    width: 40%;
-    height: 100%;
+    color: hsl(0, 0%, 100%);
 }
 .introduction:hover{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: hsl(0, 0%, 100%);
     background-color: hsl(220, 100%, 64%);
-    border: 1px solid hsl(220, 100%, 64%);
-    width: 40%;
-    height: 100%;
 }
-.statistics{
+.stat_description{
     display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 300;
 }
 .item{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-=======
->>>>>>> Stashed changes:style.css
-    box-sizing: border-box;
-    padding: 20px;
+    color: hsl(0, 0%, 100%);
     background-color: hsl(228, 100%, 60%);
     border: 1px solid hsl(220, 100%, 64%);
-    color: hsl(0, 0%, 100%);
 }
-.statistics1{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: hsl(228, 100%, 60%);
-    border: 1px solid hsl(220, 100%, 64%);
-    color: hsl(0, 0%, 100%);
-}
-.statistics2{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: hsl(228, 100%, 60%);
-    border: 1px solid hsl(220, 100%, 64%);
-    color: hsl(0, 0%, 100%);
+.item:hover{
+    background-color: hsl(220, 100%, 64%);
 }
 footer{
     position: relative;
@@ -166,8 +114,6 @@ footer{
     color: hsl(0, 0%, 100%);
     font-size: 14px;
     font-weight: 300;
-    height: 10%;
-    width: 100%;
 }
 .footer_info{
     display: flex;
@@ -185,4 +131,28 @@ footer{
 }
 .attribution a{
      color: hsl(228, 45%, 44%); 
+}
+@media(max-width: 56em){
+    .stat_description{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "introduction"
+        "stat1"
+        "stat2"
+        "stat3"
+        "stat4";
+    }
+}
+@media(max-width: 42em){
+    .midpart{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "introduction"
+        "stat1"
+        "stat2"
+        "stat3"
+        "stat4";
+    }
 }
