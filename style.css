@@ -35,7 +35,7 @@ nav{
     position: absolute;
     top: 8px;
     right: 8px;
-    padding: 10px;
+    height: 100vh;
     box-shadow: 100;
     background-color: hsl(228, 100%, 60%);
 }
@@ -45,7 +45,7 @@ nav{
     align-items: center;
     justify-content: flex-end;
     width: 250px;
-    padding: 19px;
+    padding: 27px;
     border-bottom: 1px solid hsl(220, 100%, 64%);
 }
 .dot{
@@ -60,8 +60,12 @@ nav div{
     flex-direction: column;
 }
 .navitems{
+    display: flex;
+    flex-direction: row-reverse;
     color: white;
     text-decoration: none; 
+    padding: 3px;
+    padding-right: 28px;
 }
 .navitems:hover{
     color: white;
@@ -69,6 +73,7 @@ nav div{
 }
 .midpart{
     box-sizing: border-box;
+    background-color: hsl(228, 100%, 60%);
     display: grid;
     grid-template-columns: 40% 30% 30%;
     grid-template-rows: 50% 50%;
@@ -77,35 +82,48 @@ nav div{
     "introduction stat3 stat4";
 }
 .introduction{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     padding: 20px;
-    background-color: hsl(228, 100%, 60%);
     border: 1px solid hsl(220, 100%, 64%);
     color: hsl(0, 0%, 100%);
 }
 .introduction:hover{
     background-color: hsl(220, 100%, 64%);
 }
-.stat_description{
-    display: flex;
-    flex-direction: row;
-    font-size: 14px;
-    font-weight: 300;
-}
 .item{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     color: hsl(0, 0%, 100%);
-    background-color: hsl(228, 100%, 60%);
     border: 1px solid hsl(220, 100%, 64%);
 }
 .item:hover{
     background-color: hsl(220, 100%, 64%);
+}
+.stat_descriptions{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.stat_p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 12px;
+    font-size: 14px;
+}
+.stat_p h4{
+    margin-bottom: 0;
 }
 footer{
     position: relative;
@@ -136,18 +154,6 @@ footer{
 .attribution a{
      color: hsl(228, 45%, 44%); 
 }
-@media(max-width: 56em){
-    .stat_description{
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "introduction"
-        "stat1"
-        "stat2"
-        "stat3"
-        "stat4";
-    }
-}
 @media(max-width: 42em){
     .midpart{
         grid-template-columns: 100%;
@@ -159,4 +165,27 @@ footer{
         "stat3"
         "stat4";
     }
+nav{
+    display: none;
+    align-items: centre;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 310px;
+    width: 310px;
+    box-shadow: 100;
+    background-color: hsl(228, 100%, 60%);
+}
+.close{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 250px;
+    padding: 24px;
+    width: 100%;
+    border-bottom: 1px solid hsl(220, 100%, 64%);
+}
 }
