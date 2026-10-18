@@ -25,6 +25,7 @@ header div{
     align-items: center;
 }
 header h6{
+    z-index: 100;
     margin: 0;
 }
 nav{
@@ -36,6 +37,7 @@ nav{
     top: 8px;
     right: 8px;
     height: 100vh;
+    z-index: 100;
     box-shadow: 100;
     background-color: hsl(228, 100%, 60%);
 }
@@ -51,6 +53,7 @@ nav{
 .dot{
   width: 10px;
   height: 10px;
+    z-index: 100;
   background-color: white;
   border-radius: 50%;
 }
@@ -155,7 +158,7 @@ footer{
      color: hsl(228, 45%, 44%); 
 }
 @media(max-width: 42em){
-    .midpart{
+.midpart{
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -164,7 +167,7 @@ footer{
         "stat2"
         "stat3"
         "stat4";
-    }
+}
 nav{
     display: none;
     align-items: centre;
@@ -174,7 +177,8 @@ nav{
     top: 8px;
     right: 8px;
     height: 310px;
-    width: 310px;
+    width: 96vw;
+    z-index: 1;
     box-shadow: 100;
     background-color: hsl(228, 100%, 60%);
 }
@@ -187,5 +191,15 @@ nav{
     padding: 24px;
     width: 100%;
     border-bottom: 1px solid hsl(220, 100%, 64%);
+}
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.attribution{
+    text-align: start;
+    margin-left: 0px;
 }
 }
