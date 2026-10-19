@@ -93,6 +93,7 @@ nav div{
     padding: 20px;
     border: 1px solid hsl(220, 100%, 64%);
     color: hsl(0, 0%, 100%);
+    animation: SlideInLeft 1.5s ease-in-out;
 }
 .introduction:hover{
     background-color: hsl(220, 100%, 64%);
@@ -104,9 +105,18 @@ nav div{
     justify-content: space-between;
     color: hsl(0, 0%, 100%);
     border: 1px solid hsl(220, 100%, 64%);
+    animation: SlideInRight 1.5s ease-in-out;
 }
 .item:hover{
     background-color: hsl(220, 100%, 64%);
+}
+@keyframes SlideInRight {
+    from { transform: translateX(+30px); }
+    to { transform: translateX(0); }
+}
+@keyframes SlideInLeft {
+    from { transform: translateX(-30px); }
+    to { transform: translateX(0); }
 }
 .stat_descriptions{
     display: flex;
