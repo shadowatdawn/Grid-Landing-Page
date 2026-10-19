@@ -1,8 +1,8 @@
-fetch('./index.json')
+fetch('index.json')
 .then(response => response.json())
-.then(statitics => {
+.then(statistics => {
     const stats = document.getElementById('stat_p');
-stistics.forEach(statistic => {
+statistics.forEach(statistics => {
 stats.innerHTML += `
         <div class="stat_p">
 <h4>${statistics.Achievement}</h4>
