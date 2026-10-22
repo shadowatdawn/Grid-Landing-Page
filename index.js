@@ -21,18 +21,18 @@ function countUp(element, target, duration, formatValue) {
   requestAnimationFrame(update);
 }
 
-countUp(document.getElementById("stat_number1"), 2400000, 2000, (value) =>
+countUp(document.getElementById("stat_number1"), 2400000, 1000, (value) =>
   compactFormatter.format(Math.floor(value)),
 );
-countUp(document.getElementById("stat_number2"), 1284, 2000, (value) =>
+countUp(document.getElementById("stat_number2"), 1284, 1000, (value) =>
   numberFormatter.format(Math.floor(value)),
 );
-countUp(document.getElementById("stat_number3"), 38000, 2000, (value) =>
+countUp(document.getElementById("stat_number3"), 38000, 1000, (value) =>
   compactFormatter.format(Math.floor(value)),
 );
 countUp(
   document.getElementById("stat_number4"),
   3.1,
-  2000,
+  1000,
   (value) => (value === 0 ? "0×" : `${value.toFixed(1)}×`),
 );

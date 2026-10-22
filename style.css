@@ -7,16 +7,18 @@ body{
     font-weight: 400;
     font-size: 17px;
     height: 100vh;
+    --background-color: hsl(228, 100%, 60%);
+    --border-color: hsl(220, 100%, 64%);
+
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: hsl(228, 100%, 60%);
+    background-color: var(--background-color);
     color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(220, 100%, 64%);
-    font-weight: 300;
+    border: 1px solid var(--border-color);
 }
 header div{
     display: flex;
@@ -34,12 +36,13 @@ nav{
     flex-direction: column;
     box-sizing: border-box;
     position: absolute;
+    font-size: 14px;
     top: 8px;
     right: 8px;
     height: 100vh;
     z-index: 100;
-    box-shadow: 100;
-    background-color: hsl(228, 100%, 60%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 25%);
+    background-color: var(--background-color);
 }
 .close{
     box-sizing: border-box;
@@ -48,7 +51,7 @@ nav{
     justify-content: flex-end;
     width: 250px;
     padding: 27px;
-    border-bottom: 1px solid hsl(220, 100%, 64%);
+    border-bottom: 1px solid var(--border-color);
 }
 .dot{
   width: 10px;
@@ -85,18 +88,26 @@ nav div{
     "introduction stat3 stat4";
 }
 .introduction{
+    grid-area: introduction;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 20px;
-    border: 1px solid hsl(220, 100%, 64%);
+    border: 1px solid var(--border-color);
     color: hsl(0, 0%, 100%);
     animation: SlideInLeft 1.5s ease-in-out;
 }
+.intro{
+    justify-content: start;
+    width: 70%;
+    padding-left: 20px;
+}
+.intro h1{
+    font-size: 50px;
+}
 .introduction:hover{
-    background-color: hsl(220, 100%, 64%);
+    background-color: 1px solid var(--border-color);
 }
 .item{
     box-sizing: border-box;
@@ -104,11 +115,11 @@ nav div{
     flex-direction: column;
     justify-content: space-between;
     color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(220, 100%, 64%);
+    border: 1px solid var(--border-color);
     animation: SlideInRight 1.5s ease-in-out;
 }
 .item:hover{
-    background-color: hsl(220, 100%, 64%);
+    background-color: var(--border-color);
 }
 @keyframes SlideInRight {
     from { transform: translateX(+30px); }
@@ -123,20 +134,36 @@ nav div{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     font-size: 14px;
+}
+.statistics{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.stat_h{
+    display: flex;
+    margin-bottom: 0;
+    padding: 5px;
 }
 .stat_p{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding-left: 12px;
-    font-size: 14px;
+    justify-content: start;
+    margin-top: 0;
+    padding: 5px;
 }
-.stat_p h4{
-    margin-bottom: 0;
+#stat1{
+    grid-area: stat1;
+}
+#stat2{
+    grid-area: stat2;
+}
+#stat3{
+    grid-area: stat3;
+}
+#stat4{
+    grid-area: stat4;
 }
 footer{
     position: relative;
@@ -144,8 +171,8 @@ footer{
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px;
-    background-color: hsl(228, 100%, 60%);
-    border: 1px solid hsl(220, 100%, 64%);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
     color: hsl(0, 0%, 100%);
     font-size: 14px;
     font-weight: 300;
@@ -157,7 +184,6 @@ footer{
     box-sizing: border-box;
 }
 #footer_p1{
-    font-size: 14px;
     margin-left: 0;
 }
 .attribution{
@@ -189,8 +215,9 @@ nav{
     height: 310px;
     width: 96vw;
     z-index: 1;
+    font-size: 14px;
     box-shadow: 100;
-    background-color: hsl(228, 100%, 60%);
+    background-color: var(--background-color);
 }
 .close{
     box-sizing: border-box;
@@ -200,7 +227,7 @@ nav{
     width: 100%;
     padding: 24px;
     width: 100%;
-    border-bottom: 1px solid hsl(220, 100%, 64%);
+    border-bottom: 1px solid var(--border-color);
 }
 .footer_info{
     display: flex;

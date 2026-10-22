@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" L L L L:pe="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
- <link rel="stylesheet" href="style.css">
- <link href="https://fonts.google.com/specimen/Inter" rel="stylesheet">
+ <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Grid landing page</title>
 </head>
 
@@ -32,37 +33,51 @@
   </nav>
   </header>
 <div class="midpart"> 
-  <div class="introduction" style="grid-area: introduction">
+  <div class="introduction">
+  <div class="intro">
  <h1> A classroom for every child.</h1>
   We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
   </div>
-  <div class="item" id="stat1" style="grid-area: stat1">
-  <div class="stat_descriptions">
-  <h1 class="stat_numbers" id="stat_number1"></h1 style="grid-area: stat1">
-  <img src="assets/images/icon-sparkle.svg" alt="sparkle icon" height="20px" width="20px" class="stat_icons">
   </div>
-  <div class="stat_p" id="statistics1"></div>
+  <div class="item" id="stat1">
+  <div class="stat_descriptions">
+  <h1 class="stat_numbers" id="stat_number1"></h1>
+  <img src="assets/images/icon-sparkle.svg" height="20px" width="20px" class="stat_icons">
+  </div>
+  <div class="statistics">
+  <h4 class = "stat_h" id="stats_head1"></h4>
+  <p class = "stat_p" id="stats_para1"></p>
+  </div>
 </div>
-<div class="item" id="stat2" style="grid-area: stat2">
+<div class="item" id="stat2">
   <div class="stat_descriptions">
   <h1 class="stat_numbers" id="stat_number2"></h1>
-  <img src="assets/images/icon-plus.svg" alt="globe icon" height="20px" width="20px" class="stat_icons">
+  <img src="assets/images/icon-plus.svg" height="20px" width="20px" class="stat_icons">
   </div>
-  <div class="stat_p1" id="statistics2"></div>
+  <div class="statistics">
+  <h4 class = "stat_h" id="stats_head2"></h4>
+  <p class = "stat_p" id="stats_para2"></p>
+  </div>
 </div>
-<div class="item" id="stat3" style="grid-area: stat3">
+<div class="item" id="stat3">
   <div class="stat_descriptions">
   <h1 class="stat_numbers" id="stat_number3"></h1>
-  <img src="assets/images/icon-arrow-right.svg" alt="arrow right icon" height="20px" width="20px" class="stat_icons">
+  <img src="assets/images/icon-arrow-right.svg" height="20px" width="20px" class="stat_icons">
   </div>
-  <div class="stat_p2" id="statistics3"></div>
+  <div class="statistics">
+  <h4 class = "stat_h" id="stats_head3"></h4>
+  <p class = "stat_p" id="stats_para3"></p>
+  </div>
 </div>
-<div class="item" id="stat4" style="grid-area: stat4">
+<div class="item" id="stat4">
   <div class="stat_descriptions">
   <h1 class="stat_numbers" id="stat_number4"></h1>
-  <img src="assets/images/icon-trending-up.svg" alt="trending up icon" height="20px" width="20px" class="stat_icons">
+  <img src="assets/images/icon-trending-up.svg" height="20px" width="20px" class="stat_icons">
   </div>
-  <div class="stat_p3" id="statistics4"></div>
+  <div class="statistics">
+  <h4 class = "stat_h" id="stats_head4"></h4>
+  <p class = "stat_p" id="stats_para4"></p>
+  </div>
 </div>
 </div>
   <footer>  
