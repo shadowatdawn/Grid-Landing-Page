@@ -110,3 +110,50 @@ We love receiving feedback! We're always looking to improve our challenges and o
 **This challenge is completely free. Please share it with anyone who will find it useful for practice.**
 
 **Have fun building!** 🚀
+
+Grid Landing Page
+
+A responsive landing page built as part of the Frontend Mentor Grid Landing Page Challenge. This project focuses on practicing modern CSS Grid layouts, responsive design techniques, and creating an accessible navigation experience across different screen sizes.
+
+📖 Overview
+
+This project recreates a landing page hero section for a fictional education nonprofit. The layout features a visually engaging grid design, responsive content placement, and a navigation menu optimized for both desktop and mobile devices.
+
+Users can:
+
+View the optimal layout on different screen sizes
+Interact with navigation links through hover and focus states
+Open and close the navigation menu on mobile devices
+Experience a clean, responsive interface built with modern CSS techniques
+📸 Screenshot
+
+![Live Site](design/Live-Page.jpeg)
+
+🔗 Links
+Live Site: https://shadowatdawn.github.io/Grid-Landing-Page/
+Solution: Frontend Mentor Solution
+Challenge: Frontend Mentor Challenge
+
+🛠️ Built With
+HTML5
+CSS3
+CSS Grid
+Flexbox
+Mobile-First Workflow
+JavaScript (for menu functionality)
+✨ Features
+Fully responsive design
+CSS Grid-based page layout
+Interactive navigation menu
+Hover and focus states for accessibility
+Clean and semantic HTML structure
+Cross-device compatibility
+📚 What I Learned
+
+While building this project, I improved my understanding of:
+
+Creating complex page structures using CSS Grid
+Combining Grid and Flexbox effectively
+Building responsive layouts for multiple breakpoints
+Implementing accessible navigation interactions
+Managing spacing and alignment in modern web layouts
