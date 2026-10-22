@@ -16,6 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    font-weight: 400;
     background-color: var(--background-color);
     color: hsl(0, 0%, 100%);
     border: 1px solid var(--border-color);
@@ -29,6 +30,7 @@ header div{
 header h6{
     z-index: 100;
     margin: 0;
+    font-weight: 400;
 }
 nav{
     display: none;
@@ -104,7 +106,8 @@ nav div{
     padding-left: 20px;
 }
 .intro h1{
-    font-size: 50px;
+    font-size: 54px;
+    font-weight: 500;
 }
 .introduction:hover{
     background-color: 1px solid var(--border-color);
@@ -136,7 +139,10 @@ nav div{
     justify-content: space-between;
     padding-right: 25px;
     padding-left: 25px;
-    font-size: 14px;
+    font-size: 18px;
+}
+.stat_numbers{
+    font-weight: 400;
 }
 .statistics{
     padding-left: 25px;
